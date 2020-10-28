@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>목록 선택 태그 예제</title>
+    <!-- 주석 없음 -->
+    <style>
+        ul li{
+            list-style: none;
+            margin: 15px;
+        }
+        label.reg{
+            width: 70px;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+        <legend>수강 신청인</legend>
+        <ul>
+            <li>
+                <label for="id" class="reg">학번</label>
+                <input type="text" id="id" autofocus> <!-- autofocus : 커서가 미리 가있게함 -->
+            </li>
+            <li>
+                <label for="name" class="reg">이름</label>
+                <input type="text" id="name">
+            </li>
+            <li>
+                <label for="study" class="reg">학과</label>
+                <select id="study">
+                    <option value="archi">건축공학과</option>
+                    <option value="mechanic">기계공학과</option>
+                    <option value="indus">산업공학과</option>
+                    <option value="elec">전기전자공학과</option>
+                    <option value="computer">컴퓨터공학과</option>
+                </select>
+                </li>
+            </ul>
+        </fieldset>
+    </form>
+
+</body>
+</html>

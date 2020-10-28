@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nth-child 선택자</title>
+    <!-- 주석 없음 -->
+    <style>
+        fieldset{margin-bottom: 25px;}
+        legend{font-weight: bold; font-size: 15px;}
+        input:disabled{ /* 가상 클래스 선택자 */
+            background-color: #ddd;
+            border: 1px solid #ccc;
+        }
+        input:checked + span { /* UI중 라디오, 체크박스는 :checked 사용 */
+            color: blue;
+
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>사용자 정보</legend>
+            <label>이름<input type="text" disabled></label>
+        </fieldset>
+        <fieldset>
+            <legend>신청 과목</legend>
+            <p>이 달에 신청할 과목을 선택하세요</p>
+            <label><input type="radio" name="subject" value="speaking">회화</label>
+            <label><input type="radio" name="subject" value="grammer">문법</label>
+            <label><input type="radio" name="subject" value="writing">작문</label>
+        </fieldset>
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>버튼으로 주사위 던지기</title>
+    <!-- 주석 없음 -->
+    <style>
+        body{
+            text-align: center;
+        }
+        button{
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1.5em;
+        }
+        p{font-size: 1.5em;}
+
+    </style>
+</head>
+<body>
+    
+    <button onclick = "dice()">주사위</button>
+    <p id = "throw"></p>
+
+    <script>
+
+        function dice(){
+            var number = Math.floor(Math.random() * 6) + 1;
+            // document.getElementById("throw").innerHTML = number; // getElementById 메서드는 id만 가능
+            // js는 큰따,작따 둘다 가능
+            document.querySelector('#throw').innerHTML = number; // querySelector 메서드는 class,id 둘다 가능, # 붙여야 됨
+        }
+
+    </script>
+    
+</body>
+</html>

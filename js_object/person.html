@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>객체 만들기</title>
+    <!-- 주석 없음 -->
+</head>
+<body>
+    <script>
+        // 객체 만드는 방법 : var 객체이름 = {}
+        var person = {
+            name : "추신수",    // 속성 : 값 (코머로 구분)
+            age : 38,
+            isMarried : true,
+            numberOfChildren : 3,
+
+            play : function(){  // 기능(함수)
+                window.alert('홈런을 친다!!');
+            }
+        }
+        console.log(person.name);
+        console.log(person.age);
+        console.log(person.isMarried);
+        console.log(person.numberOfChildren);
+        person.play();
+
+    </script>
+    
+</body>
+</html>

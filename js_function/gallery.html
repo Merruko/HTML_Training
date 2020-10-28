@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>롤링 갤러리</title>
+    <!-- 주석 없음 -->
+    <style>
+        #container{text-align: center;}
+        p img{vertical-align: middle;}
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>이미지 넘기기</h1>
+        <p>
+            <a href="#prev" onclick="prevGallery()"><img src="../zmain_images/left_btn.png"></a>
+            <img src="../zmain_images/img1.jpg" id="gallery">
+            <a href="#next" onclick="nextGallery()"><img src="../zmain_images/right_btn.png"></a>
+        </p>
+    </div>
+
+    <script src="gallery.js"></script>
+    
+</body>
+</html>

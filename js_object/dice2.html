@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>주사위</title>
+    <!-- 주석 없음 -->
+</head>
+<body>
+    <script>
+        
+        //주사위 2개 만들기 - 10번 던지기
+        //두 눈의 합이 7이면 "Seven Thrown!!"
+        //두 눈의 합이 11이면 "Eleven Thrown!!"
+        //두 눈의 수가 같으면 "Double Thrown!!"
+
+        for(var i=0; i<10; i++){
+
+            var dice1 = Math.floor(Math.random()*6) + 1;
+            var dice2 = Math.floor(Math.random()*6) + 1;
+            var total = dice1 + dice2;
+
+            if(total == 7) {
+                document.write("Seven Thrown!!\n");
+            } else if(total == 11){
+                document.write("Eleven Thrown!!\n");
+            } else if(dice1 == dice2){
+                document.write("Double Thrown!!\n");
+            } else {
+                document.write(total + " ");
+            }
+        }
+
+    </script>
+    
+</body>
+</html>

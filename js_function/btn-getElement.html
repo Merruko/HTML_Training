@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>문서 본문에 출력하기</title>
+    <!-- 주석 없음 -->
+    <style>
+        body{
+            text-align: center;
+            padding: 20px;
+        }
+        button{font-size: 1.5em;}
+        p{font-size: 1.5em;}
+    </style>
+</head>
+<body>
+    <button onclick="square(7)">계산하기</button>
+    <p id = "result"></p>
+    <script>
+      //제곱수 구하는 함수
+      var square = function(x){
+          var num = x * x;
+          document.getElementById("result").innerHTML = num;
+      }
+    </script>
+
+</body>
+</html>

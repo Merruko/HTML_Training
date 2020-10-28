@@ -1,0 +1,58 @@
+body{
+    font-family: "맑은 고딕", "고딕", "굴림";
+}
+header{
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: cyan;
+    overflow: hidden;
+}
+header nav{
+    width: 60%;
+    float: right;
+}
+nav ul li{
+    display: inline;
+    list-style: none;
+    margin-right: 15px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+article{
+    width: 80%;
+    margin: 0 auto;
+    padding: 5px;
+    border: 5px solid #333333;
+    overflow: hidden;
+}
+article section{
+    width: 30%;
+    height: 650px;
+    border: 1px dotted #449044;
+    margin: 5px;
+    padding: 5px;
+    float: left;
+}
+section h3{
+    background: url("../images/bg.png") no-repeat;
+    padding-left: 30px;
+}
+aside{
+    clear: both;
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: violet;
+}
+footer{
+    clear: both;
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+    color: black;
+    background-color:darkgray;
+}
+footer p{text-align: center;}

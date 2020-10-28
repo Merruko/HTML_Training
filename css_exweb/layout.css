@@ -1,0 +1,38 @@
+#container{
+    width: 80%;
+    border: 1px solid #550099;
+    margin: 0 auto;
+}
+header{
+    width: 100%;
+    height: 300px;
+    border: 1px solid #239;
+}
+section{
+    width: 100%;
+    height: 600px;
+    border: 1px solid #976;
+}
+footer{
+    width: 100%;
+    border: 1px solid #870;
+}
+
+@media screen and (max-width:767px){
+    #container{
+        background: brown;
+        color: white;
+    }
+}
+@media screen and (max-width:768px){
+    #container{
+        background: blue;
+        color: white;
+    }
+}
+@media screen and (max-width:960px){
+    #container{
+        background: black;
+        color: white;
+    }
+}

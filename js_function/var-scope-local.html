@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <!-- 지역변수의 유효 범위 -->
+    <style>
+        body{
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        function theFunc(){
+            var num = 1;    // 함수 안 선언
+            num++;
+            return num;
+        }
+        
+        var value = theFunc(); // 호출
+        console.log("value : " + value)
+        console.log("num : " + num) // 검사해보면 에러뜸. theFunc()의 지역변수 num은 이미 소멸했음.
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>표 만들기</title>
+    <!-- 주석 없음 -->
+    <style>
+        table, td{
+            border:1px solid #ccc;
+            border-collapse: collapse;
+        }
+        td{
+           padding: 10px;
+           text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>신청서 양식</caption>
+        <colgroup>
+            <col style="width:70px">
+            <col style="width:200px">
+            <col style="width:80px">
+            <col style="width:200px">
+        </colgroup>
+        <tr>
+            <td>이름</td>
+            <td></td>
+            <td>연락처</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>주소</td>
+            <td colspan="3"></td>
+        </tr>
+        <tr>
+            <td>자기소개</td>
+            <td colspan="3"></td>
+        </tr>
+    </table>
+    
+</body>
+</html>

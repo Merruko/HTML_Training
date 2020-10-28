@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition 시간</title>
+    <style>
+        .tr1{
+            width: 100px;
+            height: 100px;
+            margin: 50px;
+            padding: 20px;
+            background-color: darkgoldenrod;
+            transition-property: background-color, width, transform;
+            transition-duration: 2s, 5s, 3s;
+        }
+        .tr1:hover{
+            background-color: darksalmon;
+            width: 200px;
+            transform: rotate(-80deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="tr1"><h1>!</h1></div>
+    
+</body>
+</html>

@@ -1,0 +1,17 @@
+#wrap{
+    width: 960px;
+    margin: 0 auto;;
+}
+
+table{
+    widows: 700px;
+    border: 1px solid #222;
+    border-collapse: collapse;
+}
+th, td{
+    border: 1px solid #ccc;
+    height: 30px;
+    text-align: center;
+    font-size: 0.8em;
+}
+thead{background: #eee;}

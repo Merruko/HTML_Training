@@ -1,0 +1,7 @@
+h1 {color: rgb(0, 200, 0);} /* rgb()로 표현 */
+h2 {color: blue;}
+.accent{color: #ff0000;}    /* 16진수 표현 */
+img{
+    float:right; /* 사진을 오른쪽에 배치 */
+    margin-right: 200px;
+}

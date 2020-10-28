@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>주사위</title>
+    <!-- ! 치고 바로 엔터 누르면 양식 자동완성 -->
+</head>
+<body>
+    <script>
+        // 주사위 만들기 방법1
+        /* function dice(){
+            return Math.floor(Math.random()*6) + 1;
+         } */
+
+        // 주사위 만들기 방법2
+        var dice = function(){
+            return Math.floor(Math.random()*6) + 1;
+        }
+
+        // 주사위 10번 던지기
+        for(var i=0; i<10; i++){
+            console.log(dice()); // 콘솔 출력
+            document.write(dice()); // 페이지 출력
+        }
+        
+    </script>
+    
+</body>
+</html>

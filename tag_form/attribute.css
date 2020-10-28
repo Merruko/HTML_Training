@@ -1,0 +1,26 @@
+#container{
+    width: 800px;
+    margin: 0 auto;
+}
+
+h1{
+    text-align: center;
+}
+
+fieldset{
+    margin-bottom: 25px;
+}
+
+ul li{
+    list-style: none;
+    margin: 15px;
+}
+
+label.reg{
+    width: 110px;
+    float: left;
+    text-align: right;
+    margin-right: 10px;
+    color: rgb(0, 200, 0);
+    font-weight: bold;
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>배경 이미지 넣기</title>
+    <!-- 선형 그라데이션 구현 -->
+    <style>
+        div{
+            width: 500px;
+            height: 300px;
+            border-radius: 15px;    /* 모서리가 둥근 사각형 */
+        }
+        .grad{
+            background: linear-gradient(to left, blue, white);
+            /* 브라우저 접두사 사용 최신 브라우저가 아닌 경우 실행될 수 있음 */
+            background: -webkit-linear-gradient(to left, blue, white); /* 구글 */
+            background: -moz-linear-gradient(to left, blue, white); /* 파이어폭스 */
+            background: -o-linear-gradient(to left, blue, white); /* 애플 */
+        }
+    </style>
+</head>
+<body>
+    <div class="grad"></div>
+</body>
+</html>

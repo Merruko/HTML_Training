@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>변형 - 크기 조절</title>
+    <!-- 주석 없음 -->
+    <style>
+        .origin{
+            width: 200px;
+            height: 134px;
+            border: 1px solid black;
+            margin: 50px;
+            float: left; /* 수평배치 */
+        }
+        .scalex:hover{
+            transform: scaleX(1.2);
+        }
+        .scaley:hover{
+            transform: scaleY(1.5);
+        }
+        .scalexy:hover{
+            transform: scale(0.7);
+        }
+    </style>
+</head>
+<body>
+    <div class="origin">
+        <div class="scalex">
+            <img src="../zmain_images/fruit.jpg">
+        </div>
+    </div>
+    <div class="origin">
+        <div class="scaley">
+            <img src="../zmain_images/fruit.jpg">
+        </div>
+    </div>
+    <div class="origin">
+        <div class="scalexy">
+            <img src="../zmain_images/fruit.jpg">
+        </div>
+    </div>
+
+</body>
+</html>

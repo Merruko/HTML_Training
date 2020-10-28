@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>표 만들기</title>
+    <!-- 주석 없음 -->
+    <style>
+        .table1{
+            border:1px solid #222;
+            border-collapse: separate;  /*셀 분리*/
+            border-spacing: 20px 10px;  /*셀 간격(좌우값, 상하값)*/
+            margin-bottom: 20px;
+        }
+        .table2{
+            border:1px solid #222;
+            border-collapse: separate;  /*셀 분리*/
+            border-spacing: 40px 10px;  /*셀 간격(좌우값, 상하값)*/
+        }
+        td{
+            border: 1px solid #222;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <table class="table1">
+        <caption>프로축구 경기 일정</caption>
+        <tr>
+            <td>울산</td>
+            <td>울산 vs 인천</td>
+        </tr>
+        <tr>
+            <td>부산</td>
+            <td>부산 vs 대전</td>
+        </tr>
+        <tr>
+            <td>서울</td>
+            <td>서울 vs 강원</td>
+        </tr>
+    </table>
+
+    <table class="table2">
+        <caption>프로축구 경기 일정</caption>
+        <tr>
+            <td>울산</td>
+            <td>울산 vs 인천</td>
+        </tr>
+        <tr>
+            <td>부산</td>
+            <td>부산 vs 대전</td>
+        </tr>
+        <tr>
+            <td>서울</td>
+            <td>서울 vs 강원</td>
+        </tr>
+    </table>
+    
+</body>
+</html>

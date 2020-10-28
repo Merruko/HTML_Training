@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition-delay</title>
+    <style>
+        #ex{
+            width: 500px;
+            height: 150px;
+            margin: o auto;
+            border: 1px solid #556644;
+            border-radius: 30px;
+            padding: 20px;
+        }
+        .box{
+            width: 60px;
+            height: 60px;
+            background-color: deepskyblue;
+            margin-bottom: 20px
+        }
+        .boax p{
+            font-size: 12px;
+            padding: 5px;
+        }
+        #ex:hover .box{
+            transform: rotate(720deg);
+            margin-left: 420px;
+        }
+        #no-deley{
+            transition-duration: 3s;
+            border: 1px solid orange;
+        }
+        #deley{
+            transition-duration: 3s;
+            border: 1px solid blueviolet;
+            transition-delay: 0.5s;
+        }
+    </style>
+</head>
+<body>
+    <div id="ex">
+        <div id="no-deley" class="box"><p>no-delay</p></div>
+        <div id="deley" class="box"><p>delay</p></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+    .box{
+        height: 600px;
+        margin: 50px;
+        padding: 10px;
+        /* animation-name: moving;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate; */
+        animation: moving 2s infinite alternate;
+    }
+
+    @keyframes moving{
+        from{
+            width: 200px;
+            background: yellow;
+            transform: rotate(15deg) scale(0.5);
+        }
+        to{
+            width: 400px;
+            background: darkolivegreen;
+            transform: rotate(0deg) scale(1);
+        }
+    }
+
+    </style>
+    
+</head>
+<body>
+    <div class="box">
+    <h3>css animaiton</h3>
+    </div>
+</body>
+</html>

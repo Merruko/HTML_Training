@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>로그인 폼</title>
+    <!-- 주석 없음 -->
+    <link rel="stylesheet" href="loginForm2.css">
+</head>
+<body>
+    <div id="container">
+        <form action="processLogin.jsp" method="post">
+            <fieldset>
+                <legend>로그인 정보</legend>
+                <ul>
+                    <li>
+                        <label for="userID">아 이 디</label>
+                        <input type="text" id="userID">
+                    </li>
+                
+                    <li>
+                        <label for="userPW">비밀번호</label>
+                        <input type="password" id="userPW">
+                    </li>
+                </ul>
+            </fieldset>
+            <input type="submit" value="로그인">
+        </form>
+    </div>
+
+</body>
+</html>

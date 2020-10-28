@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>변형 - 크기 조절</title>
+    <!-- 주석 없음 -->
+    <style>
+        .origin{
+            width: 200px;
+            height: 134px;
+            border: 1px solid black;
+            margin: 50px;
+            float: left; /* 수평배치 */
+        }
+        .rotatex:hover{
+            transform: rotateX(20deg); /* transform: rotate(각도) */
+        }
+        .rotatey:hover{
+            transform: rotateY(-50deg);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="origin">
+        <div class="rotatex">
+            <img src="../zmain_images/fruit.jpg">
+        </div>
+    </div>
+    <div class="origin">
+        <div class="rotatey">
+            <img src="../zmain_images/fruit.jpg">
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배열 객체의 함수</title>
+    <!-- 주석 없음 -->
+</head>
+<body>
+    <script>
+        var str = new Array(123, "ABC", "가나다", "abc", "가나다", "123");
+        console.log(str.indexOf("가나다")); // 앞에서부터 찾는 메서드 : 2
+        console.log(str.lastIndexOf("가나다")); // 뒤에서부터 찾는 메서드 : 4
+        console.log(str.indexOf(123)); // 앞에서부터 찾는 메서드 : 0
+        console.log(str.lastIndexOf(123)); // 뒤에서부터 찾는 메서드 : 0
+        console.log(str.lastIndexOf("123")); // 뒤에서부터 찾는 메서드 : 5
+        console.log(str.lastIndexOf("다나가")); // 찾지 못하는 경우는 -1을 반환함 : -1
+    </script>
+    
+</body>
+</html>

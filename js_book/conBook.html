@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>book object</title>
+</head>
+<body>
+	<script type="text/javascript">
+	
+	//생성자 함수로 객체 만들기 
+	function Book(title, author, pages, price){
+		this.title = title,
+		this.author = author,
+		this.pages = pages,
+		this.price = price
+		this.info = function(){
+			alert(this.title+"의 저자는"+this.author+"이고, 가격은 "+this.price+"원 입니다.")
+		}
+	}
+	
+	var jsp = new Book("JSP Web Programming", "Song miyeong", 620, 27000);
+	
+	//내용 출력
+	document.write("Book title: "+jsp.title + "<br>");
+	document.write("Book author: "+jsp.author + "<br>");
+	document.write("Book pages: "+jsp.pages + "<br>");
+	document.write("Book price: "+jsp.price + "<br>");
+	jsp.info();
+	
+	
+	</script>
+
+</body>
+</html>

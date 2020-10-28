@@ -1,0 +1,30 @@
+div{
+    border:1px solid #ccc;
+}
+
+#container{
+    width: 960px;
+    margin: 0 auto;
+    padding: 20px; /*바깥 테두리와 여백*/
+}
+#header{
+    padding: 20px;
+    margin-bottom: 20px; /*아래요소와의 마진*/
+}
+#contents{
+    width: 620px;
+    padding: 20px;
+    margin-bottom: 20px;
+    float: left; /*크기를 할당하고 배치*/
+}
+#sidebar{
+    width: 220px;
+    padding: 20px;
+    margin-bottom: 20px;
+    float: right;
+    background: #eee;
+}
+#footer{
+    padding: 20px;
+    clear: both;
+}
