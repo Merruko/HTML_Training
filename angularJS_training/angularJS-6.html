@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="https://code.angularjs.org/1.8.2/angular.min.js"></script>
+<script>
+   var boardApp = angular.module('boardApp',[]);
+
+   boardApp.controller('boardController',function($scope){
+    
+        $scope.boardList = [
+            {name : "james" 
+            ,email : "james0107@naver.com"
+            ,gender : "male"
+            ,title : "Hello"
+            ,content : "Come to my new house!" }
+
+        ];
+        //게시글 추가   
+        $scope.addBoard = function(){
+            var boardForm = {
+                name : $scope.boardForm.name
+                ,email : $scope.boardForm.email
+                ,gender : $scope.boardForm.gender
+                ,title : $scope.boardForm.title
+                ,content: $scope.boardForm.content
+            };
+            $scope.boardList.push(boardForm);
+            $scope.boardForm = {
+                name : null
+                ,email : null
+                ,gender : null
+                ,title : null
+                ,content : null
+            };
+        };
+        //게시글 상세보기   
+        $scope.goDetail = function(){}
+        //게시글 삭제   
+        $scope.goDetail = function(){}
+        //게시글 수정 
+        $scope.updateBoard = function(){}
+
+   });
+</script>
+<body>
+    <div ng-app="boardApp" ng-controller="boardController">
+    <form ng-submit="addBoard();">
+        name : <input type="text" ng-model="boardForm.name"><br>
+        email : <input type="text" ng-model="boardForm.email"><br>
+        gender : <input type="radio" id="female" name="gender" value="female" ng-model="boardForm.gender">
+        <label for="female">female</label>
+        <input type="radio" id="male" name="gender" value="male" ng-model="boardForm.gender">
+        <label for="male">male</label><br>
+        title : <input type="text" ng-model="boardForm.title"><br>
+        content : <input type="text" ng-model="boardForm.content"><br>
+        <button type="submit">submit</button>
+    </form>
+    <!-- list Table -->
+    <table border="1">
+        <tr>
+            <td>No.</td>
+            <td>name</td>
+            <td>email</td>
+            <td>gender</td>
+            <td>title</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr ng-repeat="board in boardList">
+            <td>{{$index+1}}</td>
+            <td>{{board.name}}</td>
+            <td>{{board.email}}</td>
+            <td>{{board.gender}}</td>
+            <td>{{board.title}}</td>
+            <td><button>상세보기</button></td>
+            <td>삭제</td>
+        </tr>
+    </table>
+    <!-- detail Table -->
+    <div>
+        <table border="1">
+            <tr>
+                <td>no.</td>
+                <td><input type="text" readonly ng-model="detail.index"></td>
+            </tr>
+            <tr>
+                <td>name</td>
+                <td><input type="text" ng-model="detail.name"></td>
+            </tr>
+            <tr>
+                <td>email</td>
+                <td><input type="text" ng-model="detail.email"></td>
+            </tr>
+            <tr>
+                <td>gender</td>
+                <td>
+                    <input type="radio" id="female" name="gender" value="female" ng-model="detail.gender">
+                    <label for="female">female</label>
+                    <input type="radio" id="male" name="gender" value="male" ng-model="detail.gender">
+                    <label for="male">male</label>
+                </td>
+            </tr>
+            <tr>
+                <td>title</td>
+                <td><input type="text" ng-model="detail.title"></td>
+            </tr>
+            <tr>
+                <td>content</td>
+                <td><input type="text" ng-model="detail.content"></td>
+            </tr>
+        </table>
+        <button type="button" ng-click="updateBoard();"></button>
+    </div>
+</div>
+</body>
+</html>
